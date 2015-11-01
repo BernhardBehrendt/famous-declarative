@@ -33,7 +33,7 @@
                             fontFamily: 'Verdana',
                             textAlign: 'center',
                             fontSize: '20px',
-                            paddingTop: ((300) / 3.5) + 'px'
+                            paddingTop: 100 + 'px'
                         }
                     }
                 }
@@ -60,7 +60,7 @@
                             fontFamily: 'Verdana',
                             textAlign: 'center',
                             fontSize: '20px',
-                            paddingTop: ((300) / 3.5) + 'px'
+                            paddingTop: 100 + 'px'
                         }
                     }
                 }
