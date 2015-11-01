@@ -1,11 +1,9 @@
 /*global require*/
-(function (DOMElement, FamousEngine, Declarative, Window) {
+(function (DOMElement, FamousEngine, Declarative) {
     'use strict';
 
 
     var Representation,
-        iWinHeight = Window.height(),
-        iWinWidth = Window.width(),
         scene = FamousEngine.createScene();
 
 
@@ -18,7 +16,7 @@
                 meta: {
                     node: {
                         setMountPoint: [.5, .5],
-                        setAbsoluteSize: [iWinWidth * 0.25, iWinHeight * 0.25],
+                        setAbsoluteSize: [300, 300],
                         setAlign: [.5, .5],
                         setSizeMode: ['absolute', 'absolute', 'absolute'],
                         setOrigin: [.5, .5],
@@ -35,7 +33,7 @@
                             fontFamily: 'Verdana',
                             textAlign: 'center',
                             fontSize: '20px',
-                            paddingTop: ((iWinWidth * 0.25) / 3.5) + 'px'
+                            paddingTop: ((300) / 3.5) + 'px'
                         }
                     }
                 }
@@ -44,7 +42,7 @@
                 meta: {
                     node: {
                         setMountPoint: [.5, .5],
-                        setAbsoluteSize: [iWinWidth * 0.25, iWinHeight * 0.25],
+                        setAbsoluteSize: [300, 300],
                         setAlign: [.5, .5],
                         setSizeMode: ['absolute', 'absolute', 'absolute'],
                         setOrigin: [.5, .5],
@@ -62,7 +60,7 @@
                             fontFamily: 'Verdana',
                             textAlign: 'center',
                             fontSize: '20px',
-                            paddingTop: ((iWinWidth * 0.25) / 3.5) + 'px'
+                            paddingTop: ((300) / 3.5) + 'px'
                         }
                     }
                 }
@@ -108,7 +106,6 @@
 })(
     require('famous/dom-renderables/DOMElement'),
     require('famous/core/FamousEngine'),
-    require('./lib/declarative'),
-    $(window)
+    require('./lib/declarative')
 );
 
